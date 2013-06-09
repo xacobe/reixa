@@ -9,4 +9,6 @@ Example: "grid-50-100" , will show half on tablets and full on desktops.<br>
 <b>Template:</b> grid-[size tablet]-[size deskptop] <br>
 <b>Posible values:</b> 25, 33, 50, 66
 
+In mobile by default you always will get a 100% width
+
 Xacobe.net
