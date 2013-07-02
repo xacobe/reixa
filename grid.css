@@ -1,75 +1,36 @@
-/********************
-  * Grid System Reixa
-*********************
-
-/* Classes for all the grid-xxx */
-[class^="grid-"] {
+/* Applied to all the grid-xxx */
+[class^="grid-"]{
   float: left;
   padding: 10px;
-  width: 100%;
-  /* Mobile first */ }
-
-.grid-100 {
-  width: 100%; }
-
-.grid-66 {
-  width: 66%; }
-
-.grid-50 {
-  width: 50%; }
-
-.grid-33 {
-  width: 33%; }
-
-.grid-25 {
-  width: 25%; }
-
-/* No padding -remove the padding inside .grid-xxx */
-.padding-0 {
-  padding: 0; }
+  width: 100%; /* Mobile first */
+}
+/* This classes are to keep same width % on all devices classes */
+.grid-100 { width: 100%;}
+.grid-66 { width: 66.666%; }
+.grid-50 { width: 50%; }
+.grid-33 { width: 33.333%; }
+.grid-25 { width: 25%; }
 
 /* Tablet*/
 @media screen and (min-width: 500px) {
-  [class$="-100"] {
-    width: 100%; }
+[class$="-33"] { width: 33.333%;}
+[class$="-50"] { width: 50%;}
+.grid-33-66 { width: 66.666%;}
+[class$="-100"] { width: 100%;}
+}
 
-  [class$="-50"] {
-    width: 50%; }
-
-  [class$="-33"] {
-    width: 33%; }
-
-  [class$="-25"] {
-    width: 25%; }
-
-  .grid-33-66 {
-    width: 66.666%; } }
 /* Desktop */
 @media screen and (min-width: 900px) {
-  [class^="grid-100"] {
-    width: 100%; }
+[class^="grid-33"] { width: 33.333%;}
+[class^="grid-25"] { width: 25%;}
+[class^="grid-66"] { width: 66.666%;}
+.grid-50-100 { width: 50%;}
+}
 
-  [class^="grid-66"] {
-    width: 66%; }
-
-  [class^="grid-33"] {
-    width: 33%; }
-
-  [class^="grid-25"] {
-    width: 25%; }
-
-  .grid-50-100 {
-    width: 50%; } }
 /* Only mobile clases -todavía pensando si ponerlo */
 @media screen and (max-width: 500px) {
-  .grid-66-m {
-    width: 66%; }
-
-  .grid-50-m {
-    width: 50%; }
-
-  .grid-33-m {
-    width: 33%; }
-
-  .grid-25-m {
-    width: 25%; } }
+.grid-25-m { width: 25%;}
+.grid-33-m { width: 33.333%;}
+.grid-50-m { width: 50%;}
+.grid-66-m { width: 66.666%;}
+}
