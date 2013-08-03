@@ -3,6 +3,8 @@
 This is not a full grid systema. It is a punch of clases to build layout from your HTML 
 or create layout while editing html easely
 
+<a href="http://www.xacobe.net/demo/reixa" target="_blank"><b>DEMO</a>
+
 It posible to set up differents sizes on diferents devices width one class.
 
 Example: "grid-50-100" , will show half on tablets and full on desktops.<br>
