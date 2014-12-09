@@ -1,36 +1,54 @@
 /* Applied to all the grid-xxx */
-[class^="grid-"]{
+[class^="g-"]{
   float: left;
-  padding: 10px;
   width: 100%; /* Mobile first */
 }
 /* This classes are to keep same width % on all devices classes */
-.grid-100 { width: 100%;}
-.grid-66 { width: 66.666%; }
-.grid-50 { width: 50%; }
-.grid-33 { width: 33.333%; }
-.grid-25 { width: 25%; }
+.g-100 { width: 100%;}
+.g-75 { width: 75%;}
+.g-66 { width: 66.666%; }
+.g-50 { width: 50%; }
+.g-33 { width: 33.333%; }
+.g-25 { width: 25%; }
 
-/* Tablet*/
-@media screen and (min-width: 500px) {
-[class$="-33"] { width: 33.333%;}
-[class$="-50"] { width: 50%;}
-.grid-33-66 { width: 66.666%;}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Reixa */
+
+/* Small devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+[class^="g-100"] { width: 100%;}
+[class^="g-75"] { width: 75%;}
+[class^="g-66"] { width: 66.666%;}
+[class^="g-50"] { width: 50%;}
+[class^="g-33"] { width: 33.333%;}
+[class^="g-25"] { width: 25%;}
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (min-width: 992px) {
 [class$="-100"] { width: 100%;}
+[class$="-75"] { width: 75%;}
+[class$="-66"] { width: 66.666%;}
+[class$="-50"] { width: 50%;}
+[class$="-33"] { width: 33.333%;}
+[class$="-25"] { width: 25%;}
 }
 
-/* Desktop */
-@media screen and (min-width: 900px) {
-[class^="grid-33"] { width: 33.333%;}
-[class^="grid-25"] { width: 25%;}
-[class^="grid-66"] { width: 66.666%;}
-.grid-50-100 { width: 50%;}
+/* Only mobile class (up to 767) */
+
+@media screen and (max-width: 767px) {
+.g-m-75 { width: 75%;}
+.g-m-66 { width: 66.666%;}
+.g-m-50 { width: 50%;}
+.g-m-33 { width: 33.333%;}
+.g-m-25 { width: 25%;}
 }
 
-/* Only mobile clases -todavía pensando si ponerlo */
-@media screen and (max-width: 500px) {
-.grid-25-m { width: 25%;}
-.grid-33-m { width: 33.333%;}
-.grid-50-m { width: 50%;}
-.grid-66-m { width: 66.666%;}
+/* Boxes */
+
+.box {
+  padding: 10px;  
 }
