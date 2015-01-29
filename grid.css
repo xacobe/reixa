@@ -1,7 +1,15 @@
 /**
   * Most of this code was taken from Pure.CSS grid system 
   * http://purecss.io/grid
+  */
 
+/* Box model */
+
+* { box-sizing: border-box;}
+
+[class^="g-"]{
+    float: left;
+}
 /*****************************************
   * All sizes.
   ****************************************/
@@ -165,3 +173,11 @@
 .pull-xl-3-4 { padding-left: 75%;}
 .pull-xl-3-5 { padding-left: 60%;}
 .pull-xl-4-5 { padding-left: 80%;}
+
+/*****************************************
+  * Tools. Like paddings, floats, etc...
+  ****************************************/
+
+  .box {
+  	padding: 10px;
+  }

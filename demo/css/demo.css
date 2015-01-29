@@ -92,24 +92,37 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Author's custom styles          Modified!!!
    ========================================================================== */
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+[class^="g-"]{
+    background: rgba(0, 0, 0, .3);
+}
+
+.box {
+    background: rgba(0, 0, 0, .3);
+}
 
 
+/* Some typography */
 
+body { 
+    color: #666;
+    font-family: verdana, arial;
+    }
 
+h1, h2, h3, h4, h5, h6 {}
 
+a {
+    text-decoration: none;
+    color: #000;
 
-
-
-
-
-
-
-
-
-
+}
 
 /* ==========================================================================
    Helper classes
