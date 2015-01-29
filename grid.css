@@ -1,52 +1,101 @@
-/* Applied to all the grid-xxx */
-[class^="g-"]{
-  float: left;
-  width: 100%; /* Mobile first */
-}
-/* This classes are to keep same width % on all devices classes */
-.g-100 { width: 100%;}
-.g-75 { width: 75%;}
-.g-66 { width: 66.666%; }
-.g-50 { width: 50%; }
-.g-33 { width: 33.333%; }
-.g-25 { width: 25%; }
+/**
+  * Most of this code was taken from Pure.CSS grid system 
+  * http://purecss.io/grid
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Reixa */
+/**
+  * All sizes.
+  */
 
-/* Small devices (tablets, 768px and up) */
+.g-1,
+.g-1-1 { width: 100%;}
+.g-1-2,
+.g-2-4 { width: 50%;}
+.g-1-3 { width: 33.33%;}
+.g-1-4 { width: 25%;}
+.g-1-5 { width: 20%;}
+.g-2-3 { width: 66.66%;}
+.g-2-5 { width: 40%;}
+.g-3-4 { width: 75%;}
+.g-3-5 { width: 60%;}
+.g-4-5 { width: 80%;}
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/**
+  * Small size. // Is > or = 568px.
+  */
+@media screen and (min-width: 35.5em) {
 
-[class^="g-100"] { width: 100%;}
-[class^="g-75"] { width: 75%;}
-[class^="g-66"] { width: 66.666%;}
-[class^="g-50"] { width: 50%;}
-[class^="g-33"] { width: 33.333%;}
-[class^="g-25"] { width: 25%;}
-}
+.g-sm-1,
+.g-sm-1-1 { width: 100%;}
+.g-sm-1-2,
+.g-sm-2-4 { width: 50%;}
+.g-sm-1-3 { width: 33.33%;}
+.g-sm-1-4 { width: 25%;}
+.g-sm-1-5 { width: 20%;}
+.g-sm-2-3 { width: 66.66%;}
+.g-sm-2-5 { width: 40%;}
+.g-sm-3-4 { width: 75%;}
+.g-sm-3-5 { width: 60%;}
+.g-sm-4-5 { width: 80%;}
 
-/* Medium devices (desktops, 992px and up) */
-
-@media screen and (min-width: 992px) {
-[class$="-100"] { width: 100%;}
-[class$="-75"] { width: 75%;}
-[class$="-66"] { width: 66.666%;}
-[class$="-50"] { width: 50%;}
-[class$="-33"] { width: 33.333%;}
-[class$="-25"] { width: 25%;}
-}
-
-/* Only mobile class (up to 767) */
-
-@media screen and (max-width: 767px) {
-.g-m-75 { width: 75%;}
-.g-m-66 { width: 66.666%;}
-.g-m-50 { width: 50%;}
-.g-m-33 { width: 33.333%;}
-.g-m-25 { width: 25%;}
 }
 
-/* Boxes */
+/**
+  * Medium size.
+  */
+ @media screen and (min-width: 48em) {
 
-.box { padding: 10px;}
+.g-md-1,
+.g-md-1-1 { width: 100%;}
+.g-md-1-2,
+.g-md-2-4 { width: 50%;}
+.g-md-1-3 { width: 33.33%;}
+.g-md-1-4 { width: 25%;}
+.g-md-1-5 { width: 20%;}
+.g-md-2-3 { width: 66.66%;}
+.g-md-2-5 { width: 40%;}
+.g-md-3-4 { width: 75%;}
+.g-md-3-5 { width: 60%;}
+.g-md-4-5 { width: 80%;}
+
+}
+
+/**
+  * Large size.
+  */
+@media screen and (min-width: 64em) {
+
+.g-lg-1,
+.g-lg-1-1 { width: 100%;}
+.g-lg-1-2,
+.g-lg-2-4 { width: 50%;}
+.g-lg-1-3 { width: 33.33%;}
+.g-lg-1-4 { width: 25%;}
+.g-lg-1-5 { width: 20%;}
+.g-lg-2-3 { width: 66.66%;}
+.g-lg-2-5 { width: 40%;}
+.g-lg-3-4 { width: 75%;}
+.g-lg-3-5 { width: 60%;}
+.g-lg-4-5 { width: 80%;}
+
+}
+
+/**
+  * Extra large size.
+  */
+@media screen and (min-width: 80em) {
+
+.g-xl-1,
+.g-xl-1-1 { width: 100%;}
+.g-xl-1-2,
+.g-xl-2-4 { width: 50%;}
+.g-xl-1-3 { width: 33.33%;}
+.g-xl-1-4 { width: 25%;}
+.g-xl-1-5 { width: 20%;}
+.g-xl-2-3 { width: 66.66%;}
+.g-xl-2-5 { width: 40%;}
+.g-xl-3-4 { width: 75%;}
+.g-xl-3-5 { width: 60%;}
+.g-xl-4-5 { width: 80%;}
+
+}
+
