@@ -94,6 +94,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles          Modified!!!
    ========================================================================== */
+body { 
+    background: #5A7AA0 url("../img/blue-print.jpg");
+    color: #EFEFEF;
+    font-family: 'Dosis', sans-serif;
+    }
 
 .container {
     max-width: 1200px;
@@ -112,8 +117,8 @@ textarea {
 .main-menu li a:hover { background: rgba(255, 255, 255, .3);}
 
 [class^="g-"]{
-    background: rgba(186, 217, 255, 0.3);
-    border: solid 3px rgba(229, 229, 229, .3);
+    background: rgba(186, 217, 255, 0.1);
+    border: solid 3px rgba(229, 229, 229, .25);
 }
 
 .box {
@@ -133,11 +138,7 @@ textarea {
 
 /* Some typography */
 
-body { 
-    background: #5A7AA0;
-    color: #EFEFEF;
-    font-family: verdana, arial;
-    }
+
 
 h1, h2, h3, h4, h5, h6 {}
 

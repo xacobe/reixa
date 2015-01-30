@@ -7,8 +7,9 @@
 
 * { box-sizing: border-box;}
 
-[class^="g-"]{
+[class*="g-"] /* or [class^="g-"]*/ {
     float: left;
+    width: 100%; //mobile first
 }
 /*****************************************
   * All sizes.
@@ -178,6 +179,11 @@
   * Tools. Like paddings, floats, etc...
   ****************************************/
 
-  .box {
-  	padding: 10px;
+/* Layout */
+.box {
+	padding: 1em;
+	margin: 0; /* To delete any margin adhered; */
   }
+
+.l-left { float: left;}
+.l-right { float: right;}
