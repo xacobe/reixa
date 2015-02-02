@@ -94,17 +94,50 @@ textarea {
 /* ==========================================================================
    Author's custom styles          Modified!!!
    ========================================================================== */
+
+/* **************************************************************************
+ * Base
+ ***************************************************************************/
 body { 
     background: #5A7AA0 url("../img/blue-print.jpg");
+    background-position: center top;
+    background-attachment: fixed;
     color: #EFEFEF;
     font-family: 'Dosis', sans-serif;
     }
+td {
+    border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, .05); 
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, .05);
+}
+table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, .2);
+}
+table th {
+    color: #164265;
+    font-weight: bold;
+    background-color:  rgba(255, 255, 255, .4);
+}
+
+tr td:hover {
+    background: white;
+}
+
+/* **************************************************************************
+ * Layout
+ ***************************************************************************/
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Menu */
 .main-menu ul { margin: 0; padding: 0;}
 
 .main-menu li{
@@ -116,6 +149,56 @@ body {
 
 .main-menu li a:hover { background: rgba(255, 255, 255, .3);}
 
+/* **************************************************************************
+ * Modules
+ ***************************************************************************/
+/**
+ * Size selector
+ */
+
+/**
+ * sm = Small size. // Is > or = 568px.
+ * md = Medium size. // Is > or = 768px.
+ * lg = Large size. // Is > or = 1024px.
+ * xl =Extra large size. // Is > or = 1280px.
+ */
+
+.is-tablet, .is-desk, .is-mobile {
+  display: inline-block;
+}
+
+.widget-size__title {}
+
+@media screen and (min-width: 568px) and (max-width: 768px) {
+  .is-sm {
+  background: rgba(256, 256, 256, 0.6);
+  padding: 1px 3px;
+  border-radius: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1020px){
+  .is-md {
+  background: rgba(256, 256, 256, 0.6);
+  padding: 1px 3px;
+  border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1020px) and (max-width: 1280px){
+  .is-lg {
+  background: rgba(256, 256, 256, 0.6);
+  padding: 1px 3px;
+  border-radius: 10px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .is-xl {
+  background: rgba(256, 256, 256, 0.6);
+  padding: 1px 3px;
+  border-radius: 10px;
+  }
+}
+
+/* Grids */
 [class^="g-"]{
     background: rgba(186, 217, 255, 0.1);
     border: solid 3px rgba(229, 229, 229, .25);
@@ -125,7 +208,60 @@ body {
    // background: rgba(0, 0, 0, .3);
 }
 
-/* Colors */
+/* Table highlighting */
+
+table {
+  overflow: hidden;
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+body:not(.nohover) tbody tr:hover {
+  background-color: rgba(255, 255, 255, .7);
+  color: black;
+}
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after { 
+  content: '';  
+  height: 10000px;
+  left: 0;
+  position: absolute;  
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: rgba(255, 255, 255, .7);
+  color: black;
+}
+
+td:focus::after,
+th:focus::after {
+  background-color: lightblue;
+}
+
+/* Focus stuff for mobile */
+td:focus::before,
+tbody th:focus::before {
+  background-color: lightblue;
+  content: '';  
+  height: 100%;
+  top: 0;
+  left: -5000px;
+  position: absolute;  
+  width: 10000px;
+  z-index: -1;
+}
+
 
 /* Colors */
 
@@ -148,6 +284,14 @@ a {
 
 }
 
+/* **************************************************************************
+ * Theme
+ ***************************************************************************/
+
+
+/* **************************************************************************
+ * States
+ ***************************************************************************/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
