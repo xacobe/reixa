@@ -1,4 +1,6 @@
-/** Make table row highlighting **/
+/** Make table Row Highlighting 
+  * from: http://css-tricks.com/simple-css-row-column-highlighting/
+  */
 
 // Whatever kind of mobile test you wanna do.
 if (screen.width < 500) {
@@ -17,4 +19,4 @@ if (screen.width < 500) {
   
 }
 
-/* end table row highlighting */
+/* end table Row Highlighting */
