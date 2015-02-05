@@ -209,22 +209,18 @@ tr td:hover {
 }
 
 /* Table highlighting */
-
 table {
   overflow: hidden;
 }
-
 td, th {
   padding: 10px;
   position: relative;
   outline: 0;
 }
-
 body:not(.nohover) tbody tr:hover {
   background-color: rgba(255, 255, 255, .7);
   color: black;
 }
-
 td:hover::after,
 thead th:not(:empty):hover::after,
 td:focus::after,
@@ -237,7 +233,6 @@ thead th:not(:empty):focus::after {
   width: 100%;
   z-index: -1;
 }
-
 td:hover::after,
 th:hover::after {
   background-color: rgba(255, 255, 255, .7);
@@ -287,6 +282,10 @@ a {
 /* **************************************************************************
  * Theme
  ***************************************************************************/
+
+/* Windows effects on blocks */
+
+.box {}
 
 
 /* **************************************************************************
