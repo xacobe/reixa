@@ -98,7 +98,7 @@ textarea {
 /* **************************************************************************
  * Base
  ***************************************************************************/
-body { 
+body {
     color: #EFEFEF;
     font-family: 'Dosis', sans-serif;
     }
@@ -106,7 +106,7 @@ td {
     border: solid 1px rgba(255, 255, 255, 0.2);
     padding: 10px;
     text-align: center;
-    background: rgba(255, 255, 255, .05); 
+    background: rgba(255, 255, 255, .05);
 }
 table tr > th {
     background: rgba(17, 53, 83, 0.5);
@@ -165,9 +165,6 @@ tr td:hover {
 .is-tablet, .is-desk, .is-mobile {
   display: inline-block;
 }
-
-.widget-size__title {}
-
 @media screen and (min-width: 568px) and (max-width: 768px) {
   .is-sm {
   background: rgba(256, 256, 256, 0.6);
@@ -213,11 +210,11 @@ body:not(.nohover) tbody tr:hover {
 td:hover::after,
 thead th:not(:empty):hover::after,
 td:focus::after,
-thead th:not(:empty):focus::after { 
-  content: '';  
+thead th:not(:empty):focus::after {
+  content: '';
   height: 10000px;
   left: 0;
-  position: absolute;  
+  position: absolute;
   top: -5000px;
   width: 100%;
   z-index: -1;
@@ -225,7 +222,7 @@ thead th:not(:empty):focus::after {
 td:hover::after,
 th:hover::after {
   background-color: rgba(255, 255, 255, .3);
-  color: black;
+  color: white;
 }
 
 td:focus::after,
@@ -237,11 +234,11 @@ th:focus::after {
 td:focus::before,
 tbody th:focus::before {
   background-color: lightblue;
-  content: '';  
+  content: '';
   height: 100%;
   top: 0;
   left: -5000px;
-  position: absolute;  
+  position: absolute;
   width: 10000px;
   z-index: -1;
 }
@@ -265,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {}
 a {
     text-decoration: none;
     color: #e5e5e5;
-    width: 
+    width:
 
 }
 
@@ -274,20 +271,26 @@ a {
  * $Theme
  ***************************************************************************/
 
-/* Blue print grid */
+/**
+  Blue print grid
+  */
+
+/* Brillo superior*/
 .blueprint-grid:before {
-  background: radial-gradient(ellipse at top, 
+  background: radial-gradient(ellipse at top,
     rgba(255,255,255,0.3) 0%,
     rgba(255,255,255,0) 25%);
   content:"";
   height: 100%;
   width: 100%;
-  position: absolute;
   z-index: -999;
+  position: absolute;
+  top: 0;
 }
 
+/* Sombra oscura */
 .blueprint-grid:after {
-  background: radial-gradient(ellipse at center, 
+  background: radial-gradient(ellipse at center,
     rgba(0,0,0,0) 50%,
     rgba(0,0,0,0.75) 100%);
   content:"";
@@ -296,58 +299,62 @@ a {
   position: fixed;
   left: 0;
   z-index: -999;
+  top: 0;
 }
 
-
+/* Grid */
 .blueprint-grid {
   height: 100vh;
   background: rgba(20, 63, 98, 1);
   background-image:
   /* Vertical rules */
       /* Units */
-    repeating-linear-gradient(90deg, 
-      rgba(255, 255, 255, 0.1), 
-      rgba(255, 255, 255, 0.1) 1px, 
-      transparent 1px, 
+    repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
       transparent 50px
   ),
       /* 1/2 */
-    repeating-linear-gradient(90deg, 
-      rgba(255, 255, 255, 0.1), 
-      rgba(255, 255, 255, 0.1) 1px, 
-      transparent 1px, 
+    repeating-linear-gradient(90deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
       transparent 25px
   ),
   /* Horizontal rules */
       /* Units */
-    repeating-linear-gradient(180deg, 
-      rgba(255, 255, 255, 0.2), 
-      rgba(255, 255, 255, 0.2) 1px, 
-      transparent 1px, 
+    repeating-linear-gradient(180deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2) 1px,
+      transparent 1px,
       transparent 50px
   ),
       /* 1/2 */
-    repeating-linear-gradient(180deg, 
-      rgba(255, 255, 255, 0.1), 
-      rgba(255, 255, 255, 0.1) 1px, 
-      transparent 1px, 
+    repeating-linear-gradient(180deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
       transparent 25px
   );
-  
+
   background-size: 100px 50px;
   background-position: top center;
 }
 
 /* Windows & another effects on blocks */
-
 .box {
-    background: 
-      linear-gradient(135deg, 
-        rgba(255,255,255,0.25) 0%,
-        rgba(255,255,255,0) 50%);
+    /* White */
+    background:
+      linear-gradient(135deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0) 50%),
+    linear-gradient(-60deg,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0,0) 50%);
     border: solid 1px rgba(229, 229, 229, .5);
+    z-index: -999;
 }
-
 
 
 /* **************************************************************************

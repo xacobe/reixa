@@ -181,8 +181,8 @@
 
 /* Layout */
 .box {
-	padding: 1rem;
-	margin: 0; /* To delete any margin adhered; */
+  padding: 1rem;
+  margin: 0; /* To delete any margin adhered; */
   }
 
 .l-left { float: left;}

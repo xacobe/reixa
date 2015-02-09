@@ -1,10 +1,10 @@
-/** Make table Row Highlighting 
+/** Make table Row Highlighting
   * from: http://css-tricks.com/simple-css-row-column-highlighting/
   */
 
 // Whatever kind of mobile test you wanna do.
 if (screen.width < 500) {
-  
+
   // :hover will trigger also once the cells are focusable
   // you can use this class to separate things
   $("body").addClass("nohover");
@@ -16,7 +16,15 @@ if (screen.width < 500) {
     .on("touchstart", function() {
       $(this).focus();
     });
-  
-}
 
+}
 /* end table Row Highlighting */
+
+/**
+  * Add Grid
+  */
+$(document).ready(function(){
+    $(".js-create-grid").click(function(){
+      $(this).parent().append("<article class='g-1 box'> Hello!</article>");
+    });
+});
