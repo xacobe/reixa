@@ -1,6 +1,6 @@
 /********************************************************************************
   * Make table Row Highlighting
-  ********************************************************************************
+ ********************************************************************************
   * from: http://css-tricks.com/simple-css-row-column-highlighting/
   */
 
@@ -31,8 +31,11 @@ $(document).ready(function(){
   /* Add grid */
   $(".js-create-grid").click(function(){
       $(this).parent().append("<article class='g-1 box'> Hello!</article>");
-  });
+  }); 
+  
+  
+  /* Close parent div*/
   $(".js-close").click(function(){
-    $(this).parent().hide();
+    $(this).parent().remove();
   });
 });
