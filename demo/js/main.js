@@ -28,11 +28,15 @@ if (screen.width < 500) {
   ********************************************************************************/
 
 $(document).ready(function(){
-  /* Add grid */
+  /* Add main grid*/
+    $(".js-create-main-grid").click(function(){
+      $("main").append("<article class='g-1 box'><a class='js-create-grid' href='#'>Add</a>Some loremp ipsum factum </article>");
+  });     
+    
+    /* Add grid */
   $(".js-create-grid").click(function(){
-      $(this).parent().append("<article class='g-1 box'> Hello!</article>");
+      $(this).parent().append("<article class='g-1 box'><a class='js-create-grid' href='#'>Add</a>Some loremp ipsum factum </article>");
   }); 
-  
   
   /* Close parent div*/
   $(".js-close").click(function(){
