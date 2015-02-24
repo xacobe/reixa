@@ -1,0 +1,3 @@
+<div id="drop-1">
+<article class='g-1 l-box'><a class='js-create-grid' href='#'>Add</a>Some loremp ipsum factum </article>
+</div>

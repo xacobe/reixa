@@ -344,7 +344,7 @@ a {
 }
 
 /* Windows & another effects on blocks */
-.box {
+.l-box {
     /* White */
     background:
       linear-gradient(135deg,

@@ -42,4 +42,20 @@ $(document).ready(function(){
   $(".js-close").click(function(){
     $(this).parent().remove();
   });
+
+
+  // Get the value from a dropdown select
+  // $( "#all-grud.selector").val();
+
+  $("#candys")
+    .change(function () {
+      var str = "";
+      $( "select option:selected" ).each(function() {
+        str += $( this ).text() + " ";
+      });
+      $( "div" ).text( str );
+    })
+    .change();
+
+
 });
