@@ -1,6 +1,9 @@
 /**
-  * Most of this code was taken from Pure.CSS grid system 
-  * http://purecss.io/grid
+  * Some of this code was taken from different grid systems PureCSS, Bootstrap... 
+  * sm = Small size. // Is > or = 568px
+  * md = Medium size. // Is > or = 768px
+  * lg = Large size. // Is > or = 1024px
+  * xl = Extra large size. // Is > or = 1280px.
   */
 
 /* Box model */
